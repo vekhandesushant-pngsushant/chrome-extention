@@ -23,4 +23,4 @@
   chrome.storage.local.set({__cls_last_scan: payload}, () => {
     chrome.runtime.sendMessage({ type: 'PAGE_SCANNED', payload: { page: location.href } }).catch(()=>{});
   });
-})();
+})();  
